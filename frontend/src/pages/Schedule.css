@@ -1,0 +1,109 @@
+/* src/components/Schedule.css */
+.schedule-container {
+    display: flex; /* Use flexbox for layout */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.schedule-content {
+    margin-left: 250px; /* Leave space for the slide menu */
+    padding: 40px 20px; /* Increased padding for better spacing */
+    flex: 1; /* Allow the content to take the remaining space */
+    background-image: url('../assets/images/backB.png'); /* Path to your background image */
+    background-size: cover; /* Make sure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background image fixed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #EFFFCB;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule-table thead {
+    background-color: #28A745;
+    color: #fff;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 15px 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.schedule-table th {
+    font-weight: 600;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #EFFFCB;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #b5d36f;
+}
+
+.bin-item {
+    display: inline-block;
+    background-color: #28A745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Button Group Styles */
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-button {
+    margin-right: 50px;
+    color: #EFFFCB;
+    font-size: 16.13px;
+    font-weight: 400;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 34.95px;
+    border: 1;
+    border-color: #28A745;
+    background-color: #28A745; /* Green background */
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.action-button:hover {
+    background-color: #024d30;
+    transform: translateY(-2px);
+}
+
+.action-button:active {
+    transform: translateY(0);
+}
