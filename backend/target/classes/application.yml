@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/waste
+  error:
+    include-exception: true
+    include-message: always
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://nanayakkarabamunusinghe228:FFRTRF7yWGIey07S@cluster0.m51bz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: Waste
+
+
